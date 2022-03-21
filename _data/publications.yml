@@ -26,8 +26,6 @@
   materials:
     - label: "project website"
       url: "https://snapstream.kixlab.org/"
-    - label: "video presentation"
-      url: "https://youtu.be/Po6-Q5lJ0QY"
     - label: "video preview"
       url: "https://youtu.be/x62vzVBD4N4"
   award: ""
