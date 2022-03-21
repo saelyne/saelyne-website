@@ -1,0 +1,135 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<div class="wrapper">
+  Hi! I am a second year Ph.D. student in the <a href="https://cs.kaist.ac.kr/" class="link">School of Computing</a> at
+  <a href="https://www.kaist.ac.kr/" class="link">KAIST</a>. I am working with <a href="https://juhokim.com/"
+    class="link">Juho Kim</a> as part of <a href="https://www.kixlab.org" class="link">KIXLAB</a>.
+  My research interests in Human-Computer Interaction focuses on video interactions, where I aim to understand video
+  content by using HCI+AI and build interactive technologies on them.
+</div>
+
+<h2 class="archive__subtitle">News</h2>
+<ul class="list-item wrapper">
+  {% for news in site.data.news %}
+  <li>{{news.item}}</li>
+  {% endfor %}
+</ul>
+
+<h2 class="archive__subtitle">Publications</h2>
+
+<h3 class="archive__subtitle">Conference and Journal Papers</h3>
+<div class="wrapper">
+  {% for paper in site.data.publications %}
+  <div class="paper-wrapper">
+    <img src="{{ paper.img }}" />
+    <div class="paper-content">
+      {% if paper.link=="" or paper.link==undefined or paper.link=="<add link to your paper>"
+        %} <span title="Camera-ready version available soon!" class="paper-title">{{paper.title}}</span><span> (to
+          appear)</span>
+        {% else %}
+        <a href="{{paper.link}}" class="paper-title">{{paper.title}}</a>
+        {% endif %}
+        <div class="paper-author">
+          {% for author in paper.author %}
+          {{ author | markdownify }}
+          {% endfor %}
+        </div>
+        <div class="paper-meta">
+          <i class="venue">{{ paper.venue }}</i>
+          <!-- {% if paper.award %}
+        <span class="award">{{ paper.award }}</span>
+        {% endif %} -->
+          {% for material in paper.materials %}
+          <a href="{{material.url}}" class="material">{{ material.label }}</a>
+          {% endfor %}
+        </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+<h3 class="archive__subtitle">Posters, Demos, and Workshop Papers</h3>
+<div class="wrapper">
+  {% for paper in site.data.publications-workshop %}
+  <div class="paper-wrapper">
+    <img src="{{ paper.img }}" />
+    <div class="paper-content">
+      {% if paper.link=="" or paper.link==undefined or paper.link=="<add link to your paper>"
+        %} <span title="Camera-ready version available soon!" class="paper-title">{{paper.title}}</span><span> (to
+          appear)</span>
+        {% else %}
+        <a href="{{paper.link}}" class="paper-title">{{paper.title}}</a>
+        {% endif %}
+        <div class="paper-author">
+          {% for author in paper.author %}
+          {{ author | markdownify }}
+          {% endfor %}
+        </div>
+        <div class="workshop-meta">
+          <i class="venue">{{ paper.venue }}</i>
+          <span> on <a href="https://sites.google.com/nd.edu/computational-uichi22">{{paper.workshop}}</a></span>
+          <!-- {% if paper.award %}
+        <span class="award">{{ paper.award }}</span>
+        {% endif %} -->
+          {% for material in paper.materials %}
+          <a href="{{material.url}}" class="material">{{ material.label }}</a>
+          {% endfor %}
+        </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<h2 class="archive__subtitle">Awards & Honors</h2>
+<ul class="list-item wrapper">
+  {% for award in site.data.awards %}
+  {% if award.link=="" %}
+  <li>{{award.title}} ({{award.date}})</li>
+  {% else %}
+  <li><a href="{{award.link}}">{{award.title}}</a> ({{award.date}})</li>
+  {% endif "%}
+  {% endfor %}
+</ul>
+
+<h2 class="archive__subtitle">Experiences</h2>
+<ul class="list-item wrapper">
+  {% for item in site.data.experiences %}
+  <li>
+    <a href="{{item.link}}" style="font-weight: bold;">{{item.affiliation}}</a>
+    <br>
+    {{item.position}} ({{item.date}})
+    <br>
+    {% if item.mentor!="" %}
+    Mentor: {{item.mentor}}
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 class="archive__subtitle">Education</h2>
+<ul class="list-item wrapper">
+  {% for item in site.data.education %}
+  <li>
+    <div style="font-weight: bold;">
+      {{item.position}} in {{item.affiliation}}
+      {% if {{item.position}} == "Ph.D." %}
+      <span style="font-weight: normal;">(2021-Present)</span>
+      {% endif %}
+    </div>
+    {{item.note}}
+    <br>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if paginator %}
+{% assign posts = paginator.posts %}
+{% else %}
+{% assign posts = site.posts %}
+{% endif %}
+
+
+{% include paginator.html %}

@@ -1,0 +1,86 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+.archive h2 {
+  font-size: 1.2em;
+}
+.archive h3 {
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+.author__urls .cv-link {
+  font-size: 0.75em;
+}
+
+.author__avatar img {
+  width: 180px;
+  height: 180px;
+}
+
+.author__content {
+  padding-top: 15px;
+  padding-left: 10px;
+  //   text-align: center;
+}
+
+.author__urls-wrapper {
+  padding-left: 10px;
+}
+
+.page__footer-copyright {
+  text-align: center;
+}
+
+.wrapper {
+  font-size: 18px;
+}
+
+.list-item li {
+  margin-bottom: 0.2em;
+}
+
+.paper-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.paper-wrapper img {
+  width: 240px;
+  //   height: 120px;
+  margin-bottom: 20px;
+}
+
+.paper-content a {
+  color: black;
+}
+
+.paper-content {
+  margin-left: 20px;
+}
+
+.paper-author p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.paper-meta {
+  margin-top: 5px;
+}
+
+.workshop-meta {
+  margin-top: 5px;
+}
+
+.paper-meta a::before {
+  text-decoration: none;
+  display: inline-block;
+  content: "| \00a0";
+}

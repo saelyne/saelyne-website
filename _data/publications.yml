@@ -1,0 +1,34 @@
+- title: "CatchLive: Real-time Summarization of Live Streams with Stream Content and Interaction Data"
+  author: "**Saelyne Yang**, Jisu Yim, Juho Kim, Hijung Valentina Shin"
+  venue: "CHI 2022"
+  year: 2022
+  type: conference
+  img: "./../assets/img/teaser-catchlive.png"
+  award: ""
+  link: ""
+- title: "SoftVideo: Improving the Learning Experience of Software Tutorial Videos with Collective Interaction Data"
+  author: "**Saelyne Yang**, Jisu Yim, Aitolkyn Baigutanova, Seoyoung Kim, Minsuk Chang, Juho Kim"
+  venue: "IUI 2022"
+  year: 2022
+  type: conference
+  img: "./../assets/img/teaser-softvideo.png"
+  materials:
+    - label: "project website (dataset)"
+      url: "https://softvideo.kixlab.org/"
+  award: ""
+  link: "https://kixlab.github.io/website-files/2022/iui2022-SoftVideo-paper.pdf"
+- title: "Snapstream: Snapshot-based Interaction in Live Streaming for Visual Art"
+  author: "**Saelyne Yang**, Changyoon Lee, Hijung Valentina Shin, Juho Kim"
+  venue: "CHI 2020"
+  year: 2020
+  type: conference
+  img: "./../assets/img/teaser-snapstream.png"
+  materials:
+    - label: "project website"
+      url: "https://snapstream.kixlab.org/"
+    - label: "video presentation"
+      url: "https://youtu.be/Po6-Q5lJ0QY"
+    - label: "video preview"
+      url: "https://youtu.be/x62vzVBD4N4"
+  award: ""
+  link: "https://www.kixlab.org/files/2020/chi2020-Snapstream-paper.pdf"
