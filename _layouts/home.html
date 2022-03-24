@@ -27,30 +27,32 @@ layout: archive
   <div class="paper-wrapper">
     <img src="{{ paper.img }}" />
     <div class="paper-content">
-      {% if paper.link=="" or paper.link==undefined or paper.link=="<add link to your paper>"
-        %} <span title="Camera-ready version available soon!" class="paper-title">{{paper.title}}</span><span> (to
-          appear)</span>
-        {% else %}
-        <a href="{{paper.link}}" class="paper-title">{{paper.title}}</a>
+      <span class="paper-title">{{paper.title}}</span>
+      {% if paper.link=="" %}
+      <span style="font-style: italic;"> (to appear)</span>
+      {% endif %}
+      <div class="paper-author">
+        {% for author in paper.author %}
+        {{ author | markdownify }}
+        {% endfor %}
+      </div>
+      <div>
+        <i class="venue">{{ paper.venue }}</i>
+      </div>
+      <div class="paper-meta">
+        {% if paper.link !="" %}
+        [<a href="{{paper.link}}" class="material">pdf</a>]
         {% endif %}
-        <div class="paper-author">
-          {% for author in paper.author %}
-          {{ author | markdownify }}
-          {% endfor %}
-        </div>
-        <div class="paper-meta">
-          <i class="venue">{{ paper.venue }}</i>
-          <!-- {% if paper.award %}
+        <!-- {% if paper.award %}
         <span class="award">{{ paper.award }}</span>
         {% endif %} -->
-          {% for material in paper.materials %}
-          <a href="{{material.url}}" class="material">{{ material.label }}</a>
-          {% endfor %}
-        </div>
+        {% for material in paper.materials %}
+        [<a href="{{material.url}}" class="material">{{ material.label }}</a>]
+        {% endfor %}
+      </div>
     </div>
   </div>
   {% endfor %}
-
 </div>
 <h3 class="archive__subtitle">Posters, Demos, and Workshop Papers</h3>
 <div class="wrapper">
@@ -58,31 +60,34 @@ layout: archive
   <div class="paper-wrapper">
     <img src="{{ paper.img }}" />
     <div class="paper-content">
-      {% if paper.link=="" or paper.link==undefined or paper.link=="<add link to your paper>"
-        %} <span title="Camera-ready version available soon!" class="paper-title">{{paper.title}}</span><span> (to
-          appear)</span>
-        {% else %}
-        <a href="{{paper.link}}" class="paper-title">{{paper.title}}</a>
+      <span class="paper-title">{{paper.title}}</span>
+      {% if paper.link=="" %}
+      <span style="font-style: italic;"> (to appear)</span>
+      {% endif %}
+      <div class="paper-author">
+        {% for author in paper.author %}
+        {{ author | markdownify }}
+        {% endfor %}
+      </div>
+      <div>
+        <i class="venue">{{ paper.venue }}</i> <span> on <a href="{{paper.workshop_link}}">{{paper.workshop}}</a></span>
+      </div>
+      <div class="paper-meta">
+        {% if paper.link !="" %}
+        [<a href="{{paper.link}}" class="material">pdf</a>]
         {% endif %}
-        <div class="paper-author">
-          {% for author in paper.author %}
-          {{ author | markdownify }}
-          {% endfor %}
-        </div>
-        <div class="workshop-meta">
-          <i class="venue">{{ paper.venue }}</i>
-          <span> on <a href="https://sites.google.com/nd.edu/computational-uichi22">{{paper.workshop}}</a></span>
-          <!-- {% if paper.award %}
-        <span class="award">{{ paper.award }}</span>
-        {% endif %} -->
-          {% for material in paper.materials %}
-          <a href="{{material.url}}" class="material">{{ material.label }}</a>
-          {% endfor %}
-        </div>
+        <!-- {% if paper.award %}
+          <span class="award">{{ paper.award }}</span>
+          {% endif %} -->
+        {% for material in paper.materials %}
+        [<a href="{{material.url}}" class="material">{{ material.label }}</a>]
+        {% endfor %}
+      </div>
     </div>
   </div>
   {% endfor %}
 </div>
+
 <h2 class="archive__subtitle">Awards & Honors</h2>
 <ul class="list-item wrapper">
   {% for award in site.data.awards %}
@@ -115,7 +120,7 @@ layout: archive
   <li>
     <div style="font-weight: bold;">
       {{item.position}} in {{item.affiliation}}
-      {% if {{item.position}} == "Ph.D." %}
+      {% if item.position == "Ph.D." %}
       <span style="font-weight: normal;">(2021-Present)</span>
       {% endif %}
     </div>

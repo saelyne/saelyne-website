@@ -37,13 +37,13 @@
 }
 
 .author__content {
-  padding-top: 15px;
-  padding-left: 10px;
+  // padding-top: 15px;
+  // padding-left: 10px;
   //   text-align: center;
 }
 
 .author__urls-wrapper {
-  padding-left: 10px;
+  // padding-left: 10px;
 }
 
 .page__footer-copyright {
@@ -61,13 +61,17 @@
 .paper-wrapper {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .paper-wrapper img {
   width: 220px;
   //   height: 120px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+}
+
+.paper-title {
+  font-weight: bold;
 }
 
 .paper-content a {
@@ -88,14 +92,14 @@
 }
 
 .workshop-meta {
-  margin-top: 5px;
+  // margin-top: 5px;
 }
 
-.paper-meta a::before {
-  text-decoration: none;
-  display: inline-block;
-  content: "| \00a0";
-}
+// .paper-meta a::before {
+//   text-decoration: none;
+//   display: inline-block;
+//   content: "| \00a0";
+// }
 
 @media (max-width: 600px) {
   .author__urls-wrapper {
@@ -116,6 +120,8 @@
 
   .author__content {
     padding-right: 0;
+    padding-left: 30px;
+    padding-top: 30px;
     //   text-align: center;
   }
 }
