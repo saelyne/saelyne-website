@@ -5,7 +5,7 @@
   type: conference
   img: "./../assets/img/teaser-catchlive.png"
   award: ""
-  link: ""
+  link: "https://kixlab.github.io/website-files/2022/chi2022-CatchLive-paper.pdf"
 - title: "SoftVideo: Improving the Learning Experience of Software Tutorial Videos with Collective Interaction Data"
   author: "**Saelyne Yang**, Jisu Yim, Aitolkyn Baigutanova, Seoyoung Kim, Minsuk Chang, Juho Kim"
   venue: "IUI 2022"
