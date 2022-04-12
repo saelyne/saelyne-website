@@ -4,6 +4,9 @@
   year: 2022
   type: conference
   img: "./../assets/img/teaser-catchlive.png"
+  materials:
+    - label: "website"
+      url: "https://catchlive.kixlab.org/"
   award: ""
   link: "https://kixlab.github.io/website-files/2022/chi2022-CatchLive-paper.pdf"
 - title: "SoftVideo: Improving the Learning Experience of Software Tutorial Videos with Collective Interaction Data"
