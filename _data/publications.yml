@@ -35,3 +35,13 @@
       url: "https://youtu.be/x62vzVBD4N4"
   award: ""
   link: "https://www.kixlab.org/files/2020/chi2020-Snapstream-paper.pdf"
+
+- title: "What Makes It Hard for Users to Follow Software Tutorial Videos?"
+  author: "**Saelyne Yang**, Juho Kim"
+  venue: "HCI Korea 2020"
+  year: 2020
+  type: conference
+  img: "./../assets/img/teaser-software.png"
+  materials: ""
+  award: ""
+  link: "https://www.kixlab.org/files/2020/hcik2020-SoftwareTutorial-paper.pdf"
