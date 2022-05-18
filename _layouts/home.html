@@ -120,9 +120,7 @@ layout: archive
   <li>
     <div style="font-weight: bold;">
       {{item.position}} in {{item.affiliation}}
-      {% if item.position == "Ph.D." %}
-      <span style="font-weight: normal;">(2021-Present)</span>
-      {% endif %}
+      <span style="font-weight: normal;">{{item.date}}</span>
     </div>
     {{item.note}}
     <br>
