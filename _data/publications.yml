@@ -3,7 +3,7 @@
   venue: "CHI 2023 (conditionally accepted)"
   year: 2023
   type: conference
-  img: ""
+  img: "./../assets/img/blank.png"
   materials:
   award: ""
   link: ""
@@ -12,7 +12,7 @@
   venue: "CHI 2023 (conditionally accepted)"
   year: 2023
   type: conference
-  img: ""
+  img: "./../assets/img/blank.png"
   materials:
   award: ""
   link: ""
