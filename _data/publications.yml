@@ -1,3 +1,21 @@
+- title: "Beyond Instructions: A Taxonomy of Information Types in How-to Videos"
+  author: "**Saelyne Yang**, Sangkyung Kwak*, Juhoon Lee*, Juho Kim"
+  venue: "CHI 2023 (conditionally accepted)"
+  year: 2023
+  type: conference
+  img: ""
+  materials:
+  award: ""
+  link: ""
+- title: "AVscript: Accessible Video Editing with Audio-Visual Scripts"
+  author: "Mina Huh, **Saelyne Yang**, Yi-Hao Peng, Xiang 'Anthony' Chen, Young-Ho Kim, Amy Pavel"
+  venue: "CHI 2023 (conditionally accepted)"
+  year: 2023
+  type: conference
+  img: ""
+  materials:
+  award: ""
+  link: ""
 - title: "CatchLive: Real-time Summarization of Live Streams with Stream Content and Interaction Data"
   author: "**Saelyne Yang**, Jisu Yim, Juho Kim, Hijung Valentina Shin"
   venue: "CHI 2022"
