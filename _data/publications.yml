@@ -1,27 +1,29 @@
 - title: "Beyond Instructions: A Taxonomy of Information Types in How-to Videos"
   author: "**Saelyne Yang**, Sangkyung Kwak﹡, Juhoon Lee﹡, Juho Kim"
-  venue: "CHI 2023 (conditionally accepted)"
+  venue: "CHI 2023"
   year: 2023
   type: conference
-  img: "./../assets/img/blank.png"
+  img: "./../assets/img/videomap.png"
   materials:
+    - label: "project website"
+      url: "https://videomap.kixlab.org/"
   award: ""
-  link: ""
+  link: "https://kixlab.github.io/website-files/2023/chi2023-videomap-paper.pdf"
 - title: "AVscript: Accessible Video Editing with Audio-Visual Scripts"
   author: "Mina Huh, **Saelyne Yang**, Yi-Hao Peng, Xiang 'Anthony' Chen, Young-Ho Kim, Amy Pavel"
-  venue: "CHI 2023 (conditionally accepted)"
+  venue: "CHI 2023"
   year: 2023
   type: conference
-  img: "./../assets/img/blank.png"
+  img: "./../assets/img/avscript.png"
   materials:
   award: ""
-  link: ""
+  link: "https://minahuh.com/assets/pdf/AVscript-tagged.pdf"
 - title: "CatchLive: Real-time Summarization of Live Streams with Stream Content and Interaction Data"
   author: "**Saelyne Yang**, Jisu Yim, Juho Kim, Hijung Valentina Shin"
   venue: "CHI 2022"
   year: 2022
   type: conference
-  img: "./../assets/img/teaser-catchlive.png"
+  img: "./../assets/img/catchlive.png"
   materials:
     - label: "project website"
       url: "https://catchlive.kixlab.org/"
@@ -32,7 +34,7 @@
   venue: "IUI 2022"
   year: 2022
   type: conference
-  img: "./../assets/img/teaser-softvideo.png"
+  img: "./../assets/img/softvideo.png"
   materials:
     - label: "project website"
       url: "https://softvideo.kixlab.org/"
@@ -45,7 +47,7 @@
   venue: "CHI 2020"
   year: 2020
   type: conference
-  img: "./../assets/img/teaser-snapstream.png"
+  img: "./../assets/img/snapstream.png"
   materials:
     - label: "project website"
       url: "https://snapstream.kixlab.org/"
@@ -59,7 +61,7 @@
   venue: "HCI Korea 2020"
   year: 2020
   type: conference
-  img: "./../assets/img/teaser-software.png"
+  img: "./../assets/img/software.png"
   materials: ""
   award: ""
   link: "https://www.kixlab.org/files/2020/hcik2020-SoftwareTutorial-paper.pdf"
