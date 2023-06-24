@@ -103,9 +103,10 @@ analytics:
 author:
   name: "Saelyne Yang"
   avatar: "/assets/img/profile-photo.jpg"
-  bio: "PhD student at KAIST"
+  bio: "Research Intern @ Autodesk"
+  # note: "Currently @ Autodesk in Toronto"
   # location: "Somewhere"
-  email:
+  # email:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
