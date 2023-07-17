@@ -1,3 +1,12 @@
+- title: "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris"
+  author: "Guoyuan An, Woo Jae Kim, **Saelyne Yang**, Rong Li, Yuchi Huo, Sungeui Yoon"
+  venue: "ICCV 2023"
+  year: 2023
+  type: conference
+  img: "./../assets/img/blank.png"
+  materials:
+  award: ""
+  link: ""
 - title: "Beyond Instructions: A Taxonomy of Information Types in How-to Videos"
   author: "**Saelyne Yang**, Sangkyung Kwak﹡, Juhoon Lee﹡, Juho Kim"
   venue: "CHI 2023"
