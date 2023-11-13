@@ -3,10 +3,12 @@
   venue: "ICCV 2023"
   year: 2023
   type: conference
-  img: "./../assets/img/blank.png"
+  img: "./../assets/img/pixel.png"
   materials:
+  - label: "pdf"
+    url: "https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf"
   award: ""
-  link: ""
+  link: "https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf"
 - title: "Beyond Instructions: A Taxonomy of Information Types in How-to Videos"
   author: "**Saelyne Yang**, Sangkyung Kwak﹡, Juhoon Lee﹡, Juho Kim"
   venue: "CHI 2023"
