@@ -1,10 +1,12 @@
 - title: "YTCommentQA: Video Question Answerability in Instructional Videos"
   author: "**Saelyne Yang**, Sunghyun Park, Yunseok Jang, Moontae Lee"
   venue: "AAAI 2024"
-  year: 2023
+  year: 2024
   type: conference
   img: "./../assets/img/blank.png"
+  materials:
   award: ""
+  link: ""
 - title: "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris"
   author: "Guoyuan An, Woo Jae Kim, **Saelyne Yang**, Rong Li, Yuchi Huo, Sungeui Yoon"
   venue: "ICCV 2023"
@@ -12,8 +14,6 @@
   type: conference
   img: "./../assets/img/pixel.png"
   materials:
-  - label: "pdf"
-    url: "https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf"
   award: ""
   link: "https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf"
 - title: "Beyond Instructions: A Taxonomy of Information Types in How-to Videos"
