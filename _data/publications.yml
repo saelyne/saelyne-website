@@ -1,3 +1,12 @@
+- title: "ExpressEdit: Video Editing with Natural Language and Sketching"
+  author: "Bekzat Tilekbay, **Saelyne Yang**, Michal A Lewkowicz, Alex Suryapranata, Juho Kim"
+  venue: "IUI 2024"
+  year: 2024
+  type: conference
+  img: "./../assets/img/blank.png"
+  materials:
+  award: ""
+  link: ""
 - title: "YTCommentQA: Video Question Answerability in Instructional Videos"
   author: "**Saelyne Yang**, Sunghyun Park, Yunseok Jang, Moontae Lee"
   venue: "AAAI 2024"
