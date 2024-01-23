@@ -3,7 +3,7 @@
   venue: "CHI 2024"
   year: 2024
   type: conference
-  img: "./../assets/img/blank.png"
+  img: "./../assets/img/AQuA.png"
   materials:
   award: ""
   link: ""
@@ -12,7 +12,7 @@
   venue: "IUI 2024"
   year: 2024
   type: conference
-  img: "./../assets/img/blank.png"
+  img: "./../assets/img/ExpressEdit.png"
   materials:
   award: ""
   link: ""
@@ -21,7 +21,7 @@
   venue: "AAAI 2024"
   year: 2024
   type: conference
-  img: "./../assets/img/blank.png"
+  img: "./../assets/img/YTCommentQA.png"
   materials:
   award: ""
   link: ""
