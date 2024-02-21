@@ -23,8 +23,12 @@
   type: conference
   img: "./../assets/img/YTCommentQA.png"
   materials:
+    - label: "poster"
+      url: "https://drive.google.com/file/d/1bRLYm61tjrwTVorpL_sMNaAuRfGJZQBE/view"
+    - label: "dataset"
+      url: "https://github.com/lgresearch/YTCommentQA"
   award: ""
-  link: ""
+  link: "https://arxiv.org/abs/2401.17343"
 - title: "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris"
   author: "Guoyuan An, Woo Jae Kim, **Saelyne Yang**, Rong Li, Yuchi Huo, Sungeui Yoon"
   venue: "ICCV 2023"
@@ -32,6 +36,8 @@
   type: conference
   img: "./../assets/img/pixel.png"
   materials:
+    - label: "dataset"
+      url: "https://github.com/anguoyuan/pixel_retrieval-segmented_instance_retrieval"
   award: ""
   link: "https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf"
 - title: "Beyond Instructions: A Taxonomy of Information Types in How-to Videos"
