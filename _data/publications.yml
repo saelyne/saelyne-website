@@ -6,7 +6,7 @@
   img: "./../assets/img/AQuA.png"
   materials:
   award: ""
-  link: ""
+  link: "https://arxiv.org/abs/2403.05213"
 - title: "ExpressEdit: Video Editing with Natural Language and Sketching"
   author: "Bekzat Tilekbay, **Saelyne Yang**, Michal A Lewkowicz, Alex Suryapranata, Juho Kim"
   venue: "IUI 2024"
@@ -14,8 +14,10 @@
   type: conference
   img: "./../assets/img/ExpressEdit.png"
   materials:
+    - label: "project website"
+      url: "https://expressedit.kixlab.org/"
   award: ""
-  link: ""
+  link: "https://arxiv.org/abs/2403.17693"
 - title: "YTCommentQA: Video Question Answerability in Instructional Videos"
   author: "**Saelyne Yang**, Sunghyun Park, Yunseok Jang, Moontae Lee"
   venue: "AAAI 2024"
