@@ -1,4 +1,14 @@
 - title: "Improving Video Interfaces by Presenting Informational Units of Videos"
+  author: "**Saelyne Yang**, Jaesang Yu, Jae Won Cho Juho Kim"
+  venue: "CVPR 2024 Workshop"
+  workshop: "Learning from Procedural Videos and Language"
+  workshop_link: "https://sites.google.com/view/lpvl-cvpr2024"
+  year: 2024
+  img: "./../assets/img/fine-grained.png"
+  materials:
+  award: ""
+  link: "https://kixlab.github.io/website-files/2024/cvpr2024-finegrained-workshop.pdf "
+- title: "Improving Video Interfaces by Presenting Informational Units of Videos"
   author: "**Saelyne Yang**, Sankyung Kwak, Tae Soo Kim, Juho Kim"
   venue: "CHI 2022 Workshop"
   workshop: "Computational Approaches for Understanding, Generating, and Adapting User Interfaces"
