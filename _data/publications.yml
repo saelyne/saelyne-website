@@ -1,3 +1,12 @@
+- title: "Silent Impact: Tracking Tennis Shots from the Passive Arm"
+  author: "Junyog Park, **Saelyne Yang**, Sungho Jo"
+  venue: "UIST 2024"
+  year: 2024
+  type: conference
+  img: "./../assets/img/blank.png"
+  materials:
+  award: ""
+  link: "https://arxiv.org/abs/2403.05213"
 - title: "AQuA: Automated Question-Answering in Software Tutorial Videos with Visual Anchors"
   author: "**Saelyne Yang**, Jo Vermeulen, George Fitzmaurice, Justin Matejka"
   venue: "CHI 2024"
