@@ -6,7 +6,7 @@
   img: "./../assets/img/blank.png"
   materials:
   award: ""
-  link: "https://arxiv.org/abs/2403.05213"
+  link: ""
 - title: "AQuA: Automated Question-Answering in Software Tutorial Videos with Visual Anchors"
   author: "**Saelyne Yang**, Jo Vermeulen, George Fitzmaurice, Justin Matejka"
   venue: "CHI 2024"
