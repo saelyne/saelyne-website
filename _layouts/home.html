@@ -134,7 +134,7 @@ layout: archive
 
 <h2 class="archive__subtitle">Academic Services</h2>
 <div class="service-group">
-  <h4>Organizing Committee</h4>
+  <h3>Organizing Committee</h3>
   <ul class="list-item wrapper">
     {% for service in site.data.service %}
     {% if service.type=="organizing" %}
@@ -144,7 +144,7 @@ layout: archive
   </ul>
 </div>
 <div class="service-group">
-  <h4>Program Committee</h4>
+  <h3>Program Committee</h3>
   <ul class="list-item wrapper">
     {% for service in site.data.service %}
     {% if service.type=="program" %}
@@ -154,7 +154,7 @@ layout: archive
   </ul>
 </div>
 <div class="service-group">
-  <h4>Session Chair</h4>
+  <h3>Session Chair</h3>
   <ul class="list-item wrapper">
     {% for service in site.data.service %}
     {% if service.type=="session" %}
@@ -165,8 +165,8 @@ layout: archive
 </div>
 <div class="service-group">
   <div style="display: flex; align-items: center;">
-    <h4 style="margin: 0;">Reviewer</h4>
-    <span style="margin-left: 8px; font-size: 14px;">(*=Special Recognition for Outstanding Reviews)</span>
+    <h3 style="margin: 0;">Reviewer</h3>
+    <span style="margin-left: 8px;">(*=Special Recognition for Outstanding Reviews)</span>
   </div>
   <ul class="list-item wrapper">
     {% for service in site.data.service %}
@@ -177,7 +177,7 @@ layout: archive
   </ul>
 </div>
 <div class="service-group">
-  <h4>Student Volunteer</h4>
+  <h3>Student Volunteer</h3>
   <ul class="list-item wrapper">
     {% for service in site.data.service %}
     {% if service.type=="volunteer" %}
@@ -191,7 +191,7 @@ layout: archive
 <div>
   {% for item in site.data.talks %}
   <div class="service-group">
-    <h4>{{item.title}}</h4>
+    <h3>{{item.title}}</h3>
     {% for talk in item.talks %}
     <ul class="list-item wrapper">
       <li>

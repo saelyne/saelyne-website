@@ -7,23 +7,18 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+body {
+  font-size: 0.8em;
+}
+
 ul {
   margin: 0.2em;
-}
-
-.archive h5 {
-  font-size: 0.8em;
-  margin: 0;
-}
-
-.archive h4 {
-  font-size: 0.9em;
-  margin: 0;
 }
 
 .archive h2 {
   font-size: 1.2em;
 }
+
 .archive h3 {
   font-size: 1em;
   margin-top: 15px;
@@ -34,7 +29,7 @@ ul {
 }
 
 .author__bio p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -51,22 +46,12 @@ ul {
   height: 180px;
 }
 
-.author__content {
-  // padding-top: 15px;
-  // padding-left: 10px;
-  //   text-align: center;
-}
-
-.author__urls-wrapper {
-  // padding-left: 10px;
-}
-
 .page__footer-copyright {
   text-align: center;
 }
 
 .wrapper {
-  font-size: 18px;
+  // font-size: 16px;
 }
 
 .list-item li {
