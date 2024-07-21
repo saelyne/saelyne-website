@@ -13,8 +13,8 @@ layout: archive
   users to <strong>create and consume video content</strong> more effectively.
   <br />
   <br />
-  <span style="font-weight: 600;">Keywords: </span>Human-Computer Interaction; Video Interaction;
-  Multimodal Understanding; Generative AIs
+  <span style="font-weight: 600;">Keywords: </span>Human-Computer Interaction; Computer Vision; Video Interaction;
+  Multimodal Understanding;
   <!-- <br/> -->
   <!-- <b> I am a research intern at Autodesk this summer, working in the Toronto office! </b> -->
 </div>
@@ -46,13 +46,18 @@ layout: archive
       <div>
         <i class="venue">{{ paper.venue }}</i>
       </div>
+      <div>
+        <!-- {% if paper.award %}
+        <span class="award">{{ paper.award }}</span>
+        {% endif %} -->
+        {% if paper.note %}
+        <span class="paper-note">{{ paper.note }}</span>
+        {% endif %}
+      </div>
       <div class="paper-meta">
         {% if paper.link !="" %}
         [<a href="{{paper.link}}" class="material" target="_blank">pdf</a>]
         {% endif %}
-        <!-- {% if paper.award %}
-        <span class="award">{{ paper.award }}</span>
-        {% endif %} -->
         {% for material in paper.materials %}
         [<a href="{{material.url}}" class="material" target="_blank">{{ material.label }}</a>]
         {% endfor %}
@@ -104,11 +109,17 @@ layout: archive
     {{item.position}} ({{item.date}})
     <br>
     {% if item.mentor!="" %}
-    Mentors: {{item.mentor}}
+    {% assign mentors_list = item.mentor | split: "," %}
+    {% if mentors_list.size > 1 %}
+    <span style="font-weight: bold;">Mentors:</span> {{ item.mentor }}
+    {% else %}
+    <span style="font-weight: bold;">Mentor:</span> {{ item.mentor }}
+    {% endif %}
     {% endif %}
   </li>
   {% endfor %}
 </ul>
+
 <h2 class="archive__subtitle">Awards & Honors</h2>
 <ul class="list-item wrapper">
   {% for award in site.data.awards %}
@@ -119,6 +130,80 @@ layout: archive
   {% endif "%}
   {% endfor %}
 </ul>
+
+<h2 class="archive__subtitle">Academic Services</h2>
+<div class="service-group">
+  <h4>Organizing Committee</h4>
+  <ul class="list-item wrapper">
+    {% for service in site.data.service %}
+    {% if service.type=="organizing" %}
+    <li>{{service.title}}</li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+<div class="service-group">
+  <h4>Program Committee</h4>
+  <ul class="list-item wrapper">
+    {% for service in site.data.service %}
+    {% if service.type=="program" %}
+    <li>{{service.title}}</li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+<div class="service-group">
+  <h4>Session Chair</h4>
+  <ul class="list-item wrapper">
+    {% for service in site.data.service %}
+    {% if service.type=="session" %}
+    <li>{{service.title}}</li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+<div class="service-group">
+  <div style="display: flex; align-items: center;">
+    <h4 style="margin: 0;">Reviewer</h4>
+    <span style="margin-left: 8px; font-size: 14px;">(*=Special Recognition for Outstanding Reviews)</span>
+  </div>
+  <ul class="list-item wrapper">
+    {% for service in site.data.service %}
+    {% if service.type=="reviewer" %}
+    <li>{{service.title}}</li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+<div class="service-group">
+  <h4>Student Volunteer</h4>
+  <ul class="list-item wrapper">
+    {% for service in site.data.service %}
+    {% if service.type=="volunteer" %}
+    <li>{{service.title}}</li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+<h2 class="archive__subtitle">Invited Talks</h2>
+<div>
+  {% for item in site.data.talks %}
+  <div class="service-group">
+    <h4>{{item.title}}</h4>
+    {% for talk in item.talks %}
+    <ul class="list-item wrapper">
+      <li>
+        <div><span style="font-weight: 600; color: rgb(103, 103, 103)">{{talk.where}}</span> ({{talk.date}})</div>
+        {% if talk.host %}
+        <div>Host: {{talk.host}}</div>
+        {% endif %}
+      </li>
+    </ul>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
 
 <h2 class="archive__subtitle">Education</h2>
 <ul class="list-item wrapper">

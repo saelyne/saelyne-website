@@ -7,6 +7,20 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+ul {
+  margin: 0.2em;
+}
+
+.archive h5 {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.archive h4 {
+  font-size: 0.9em;
+  margin: 0;
+}
+
 .archive h2 {
   font-size: 1.2em;
 }
@@ -92,8 +106,13 @@
   margin-top: 5px;
 }
 
-.workshop-meta {
-  // margin-top: 5px;
+.service-group {
+  margin: 10px 0;
+}
+
+.paper-note{
+  font-style: italic;
+  font-size: 0.9em;
 }
 
 // .paper-meta a::before {

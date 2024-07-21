@@ -6,6 +6,8 @@
   year: 2024
   img: "./../assets/img/fine-grained.png"
   materials:
+    - label: "poster"
+      url: "https://drive.google.com/file/d/1sI0aS3g_j1QXF0NLSsN8-Pa8Co8Yg1Mk/view?usp=sharing"
   award: ""
   link: "https://kixlab.github.io/website-files/2024/cvpr2024-finegrained-workshop.pdf "
 - title: "Improving Video Interfaces by Presenting Informational Units of Videos"

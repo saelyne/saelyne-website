@@ -1,12 +1,12 @@
 - title: "Silent Impact: Tracking Tennis Shots from the Passive Arm"
   author: "Junyong Park, **Saelyne Yang**, Sungho Jo"
-  venue: "UIST 2024 (conditionally accepted)"
+  venue: "UIST 2024"
   year: 2024
   type: conference
-  img: "./../assets/img/blank.png"
+  img: "./../assets/img/silent.png"
   materials:
   award: ""
-  link: ""
+  link: "https://junyong.xyz/pdf/Pub_UIST2024.pdf"
 - title: "AQuA: Automated Question-Answering in Software Tutorial Videos with Visual Anchors"
   author: "**Saelyne Yang**, Jo Vermeulen, George Fitzmaurice, Justin Matejka"
   venue: "CHI 2024"
@@ -27,6 +27,7 @@
       url: "https://expressedit.kixlab.org/"
   award: ""
   link: "https://arxiv.org/abs/2403.17693"
+  note: "Also presented at the HAI-GEN Workshop at IUI 2024"
 - title: "YTCommentQA: Video Question Answerability in Instructional Videos"
   author: "**Saelyne Yang**, Sunghyun Park, Yunseok Jang, Moontae Lee"
   venue: "AAAI 2024"
@@ -40,6 +41,7 @@
       url: "https://github.com/lgresearch/YTCommentQA"
   award: ""
   link: "https://arxiv.org/abs/2401.17343"
+  note: "Also presented at the LPVL Workshop at CVPR 2024"
 - title: "Towards Content-based Pixel Retrieval in Revisited Oxford and Paris"
   author: "Guoyuan An, Woo Jae Kim, **Saelyne Yang**, Rong Li, Yuchi Huo, Sungeui Yoon"
   venue: "ICCV 2023"
