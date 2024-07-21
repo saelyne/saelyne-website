@@ -107,6 +107,10 @@ ul {
 // }
 
 @media (max-width: 600px) {
+  body {
+    font-size: 1em; /* Adjust to your preferred font size for mobile */
+  }
+
   .author__urls-wrapper {
     padding-left: 0;
     display: block;
