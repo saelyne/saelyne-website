@@ -29,7 +29,7 @@ layout: archive
 
 <h2 class="archive__subtitle">Publications</h2>
 
-<h3 class="archive__subtitle">Conference and Journal Papers</h3>
+<!-- <h3 class="archive__subtitle">Conference and Journal Papers</h3> -->
 <div class="wrapper">
   {% for paper in site.data.publications %}
   <div class="paper-wrapper">
@@ -44,8 +44,16 @@ layout: archive
         {{ author | markdownify }}
         {% endfor %}
       </div>
-      <div>
+      <!-- <div>
         <i class="venue">{{ paper.venue }}</i>
+      </div> -->
+      <div>
+        {% if paper.workshop %}
+        <i class="venue">{{ paper.venue }}</i>
+        <span> on <a href="{{paper.workshop_link}}">{{paper.workshop}}</a></span>
+        {% else %}
+        <i class="venue">{{ paper.venue }}</i>
+        {% endif %}
       </div>
       <div>
         <!-- {% if paper.award %}
@@ -67,7 +75,7 @@ layout: archive
   </div>
   {% endfor %}
 </div>
-<h3 class="archive__subtitle">Posters, Demos, and Workshop Papers</h3>
+<!-- <h3 class="archive__subtitle">Posters, Demos, and Workshop Papers</h3>
 <div class="wrapper">
   {% for paper in site.data.publications-workshop %}
   <div class="paper-wrapper">
@@ -83,15 +91,15 @@ layout: archive
         {% endfor %}
       </div>
       <div>
-        <i class="venue">{{ paper.venue }}</i> <span> on <a href="{{paper.workshop_link}}">{{paper.workshop}}</a></span>
+        <i class="venue">{{ paper.venue }}</i>
+        {% if paper.workshop !="" %}
+        <span> on <a href="{{paper.workshop_link}}">{{paper.workshop}}</a></span>
+        {% endif %}
       </div>
       <div class="paper-meta">
         {% if paper.link !="" %}
         [<a href="{{paper.link}}" class="material" target="_blank">pdf</a>]
         {% endif %}
-        <!-- {% if paper.award %}
-          <span class="award">{{ paper.award }}</span>
-          {% endif %} -->
         {% for material in paper.materials %}
         [<a href="{{material.url}}" class="material" target="_blank">{{ material.label }}</a>]
         {% endfor %}
@@ -99,7 +107,7 @@ layout: archive
     </div>
   </div>
   {% endfor %}
-</div>
+</div> -->
 
 <h2 class="archive__subtitle">Experiences</h2>
 <ul class="list-item wrapper">

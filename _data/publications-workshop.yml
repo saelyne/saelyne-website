@@ -1,3 +1,12 @@
+- title: "Enhancing How People Learn Procedural Tasks Through How-to Videos"
+  author: "**Saelyne Yang**"
+  venue: "UIST 2024 Doctoral Symposium"
+  workshop: ""
+  year: 2024
+  img: "./../assets/img/uist-dc.png"
+  materials:
+  award: ""
+  link: "https://kixlab.github.io/website-files/2024/uist2024-dc-saelyne.pdf "
 - title: "Fine-Grained Action Understanding with Tools in Instructional Videos"
   author: "**Saelyne Yang**, Jaesang Yu, Jae Won Cho, Juho Kim"
   venue: "CVPR 2024 Workshop"
