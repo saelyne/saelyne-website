@@ -4,6 +4,8 @@
   year: 2024
   img: "./../assets/img/uist-dc.png"
   materials:
+    - label: "poster"
+      url: "https://drive.google.com/file/d/1ZBsLtFRh_ATm0EEySQeZhjczTxlTSeL_/view?usp=sharing
   award: ""
   link: "https://kixlab.github.io/website-files/2024/uist2024-dc-saelyne.pdf "
 - title: "Silent Impact: Tracking Tennis Shots from the Passive Arm"
