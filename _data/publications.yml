@@ -127,8 +127,6 @@
   materials:
     - label: "project website"
       url: "https://softvideo.kixlab.org/"
-    - label: "dataset"
-      url: "https://softvideo.kixlab.org/"
   award: ""
   link: "https://kixlab.github.io/website-files/2022/iui2022-SoftVideo-paper.pdf"
 - title: "Snapstream: Snapshot-based Interaction in Live Streaming for Visual Art"

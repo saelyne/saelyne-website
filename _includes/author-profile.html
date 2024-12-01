@@ -139,6 +139,14 @@
       </li>
       {% endif %}
 
+      {% if author.gscholar %}
+      <li>
+        <a href="https://github.com/{{ author.gscholar }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+          <i class="fab fa-fw fa-google-scholar" aria-hidden="true"></i><span class="label">Google Scholar</span>
+        </a>
+      </li>
+      {% endif %}
+
       {% if author.gitlab %}
       <li>
         <a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs" rel="nofollow noopener noreferrer me">
