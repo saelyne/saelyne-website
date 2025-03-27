@@ -3,10 +3,10 @@
   venue: "IUI 2025"
   year: 2024
   type: conference
-  img: ""
+  img: "./../assets/img/videomix.png"
   materials:
   award: ""
-  link: ""
+  link: "https://dl.acm.org/doi/full/10.1145/3708359.3712144"
 - title: "Enhancing How People Learn Procedural Tasks Through How-to Videos"
   author: "**Saelyne Yang**"
   venue: "UIST 2024 Doctoral Symposium"
@@ -150,7 +150,7 @@
     - label: "video preview"
       url: "https://youtu.be/x62vzVBD4N4"
   award: ""
-  link: "https://www.kixlab.org/files/2020/chi2020-Snapstream-paper.pdf"
+  link: "https://kixlab.github.io/website-files/2020/chi2020-Snapstream-paper.pdf"
 
 - title: "What Makes It Hard for Users to Follow Software Tutorial Videos?"
   author: "**Saelyne Yang**, Juho Kim"
@@ -160,4 +160,4 @@
   img: "./../assets/img/software.png"
   materials: ""
   award: ""
-  link: "https://www.kixlab.org/files/2020/hcik2020-SoftwareTutorial-paper.pdf"
+  link: "https://kixlab.github.io/website-files/2020/hcik2020-SoftwareTutorial-paper.pdf"
