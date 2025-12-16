@@ -106,7 +106,7 @@ author:
   avatar: "/assets/img/profile-photo.jpg"
   bio: "Ph.D. Student @ KAIST"
   # note: "Currently @ Pittsburgh, PA, USA"
-  location: "Currently @ Pittsburgh, USA"
+  # location: "Currently @ Pittsburgh, USA"
   # email:
   links:
     - label: "Email"

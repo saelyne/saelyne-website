@@ -1,3 +1,12 @@
+- title: "GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks"
+  author: "**Saelyne Yang**, Jaesang Yu, Yi-Hao Peng, Kevin Qinghong Lin, Jae Won Cho, Yale Song, Juho Kim"
+  venue: "Under Review"
+  year: 2024
+  type: conference
+  img: "./../assets/img/guide.png"
+  materials:
+  award: ""
+  link: ""
 - title: "VideoMix: Aggregating How-To Videos for Task-Oriented Learning"
   author: "**Saelyne Yang**, Anh Truong, Juho Kim, Dingzeyu Li"
   venue: "IUI 2025"
