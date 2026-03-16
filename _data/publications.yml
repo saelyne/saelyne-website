@@ -1,16 +1,25 @@
 - title: "GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks"
   author: "**Saelyne Yang**, Jaesang Yu, Yi-Hao Peng, Kevin Qinghong Lin, Jae Won Cho, Yale Song, Juho Kim"
-  venue: "Under Review"
-  year: 2024
+  venue: "CVPR 2026"
+  year: 2026
   type: conference
   img: "./../assets/img/guide.png"
   materials:
   award: ""
   link: ""
+- title: "\"I Can't Keep Up\": Accessibility Barriers in Video-Based Learning for Individuals with Borderline Intellectual Functioning"
+  author: "Hyehyun Chu, Seungju Kim, Chen Zhou, Yu-Kai Hung, **Saelyne Yang**, Hyun W. Ka, Juho Kim"
+  venue: "CHI 2026"
+  year: 2026
+  type: conference
+  img: "./../assets/img/blv.png"
+  materials:
+  award: ""
+  link: "https://arxiv.org/abs/2602.08300"
 - title: "VideoMix: Aggregating How-To Videos for Task-Oriented Learning"
   author: "**Saelyne Yang**, Anh Truong, Juho Kim, Dingzeyu Li"
   venue: "IUI 2025"
-  year: 2024
+  year: 2025
   type: conference
   img: "./../assets/img/videomix.png"
   materials:
