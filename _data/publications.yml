@@ -6,7 +6,7 @@
   img: "./../assets/img/guide.png"
   materials:
   award: ""
-  link: ""
+  link: "https://arxiv.org/abs/2603.25864"
 - title: "\"I Can't Keep Up\": Accessibility Barriers in Video-Based Learning for Individuals with Borderline Intellectual Functioning"
   author: "Hyehyun Chu, Seungju Kim, Chen Zhou, Yu-Kai Hung, **Saelyne Yang**, Hyun W. Ka, Juho Kim"
   venue: "CHI 2026"
