@@ -5,6 +5,8 @@
   type: conference
   img: "./../assets/img/guide.png"
   materials:
+  - label: "Project Website"
+    url: "https://guide-bench.github.io/"
   award: ""
   link: "https://arxiv.org/abs/2603.25864"
 - title: "\"I Can't Keep Up\": Accessibility Barriers in Video-Based Learning for Individuals with Borderline Intellectual Functioning"
@@ -31,7 +33,7 @@
   year: 2024
   img: "./../assets/img/uist-dc.png"
   materials:
-    - label: "poster"
+    - label: "Poster"
       url: "https://drive.google.com/file/d/1ZBsLtFRh_ATm0EEySQeZhjczTxlTSeL_/view?usp=sharing"
   award: ""
   link: "https://kixlab.github.io/website-files/2024/uist2024-dc-saelyne.pdf "
@@ -52,7 +54,7 @@
   year: 2024
   img: "./../assets/img/fine-grained.png"
   materials:
-    - label: "poster"
+    - label: "Poster"
       url: "https://drive.google.com/file/d/1sI0aS3g_j1QXF0NLSsN8-Pa8Co8Yg1Mk/view?usp=sharing"
   award: ""
   link: "https://kixlab.github.io/website-files/2024/cvpr2024-finegrained-workshop.pdf "
@@ -72,7 +74,7 @@
   type: conference
   img: "./../assets/img/ExpressEdit.png"
   materials:
-    - label: "project website"
+    - label: "Project Website"
       url: "https://expressedit.kixlab.org/"
   award: ""
   link: "https://arxiv.org/abs/2403.17693"
@@ -84,9 +86,9 @@
   type: conference
   img: "./../assets/img/YTCommentQA.png"
   materials:
-    - label: "poster"
+    - label: "Poster"
       url: "https://drive.google.com/file/d/1bRLYm61tjrwTVorpL_sMNaAuRfGJZQBE/view"
-    - label: "dataset"
+    - label: "Dataset"
       url: "https://github.com/lgresearch/YTCommentQA"
   award: ""
   link: "https://arxiv.org/abs/2401.17343"
@@ -98,7 +100,7 @@
   type: conference
   img: "./../assets/img/pixel.png"
   materials:
-    - label: "dataset"
+    - label: "Dataset"
       url: "https://github.com/anguoyuan/pixel_retrieval-segmented_instance_retrieval"
   award: ""
   link: "https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf"
@@ -109,9 +111,9 @@
   type: conference
   img: "./../assets/img/videomap.png"
   materials:
-    - label: "project website"
+    - label: "Project Website"
       url: "https://videomap.kixlab.org/"
-    - label: "talk"
+    - label: "Talk"
       url: "https://youtu.be/3SN4OQuOQ-s"
   award: ""
   link: "https://kixlab.github.io/website-files/2023/chi2023-videomap-paper.pdf"
@@ -131,7 +133,7 @@
   type: conference
   img: "./../assets/img/catchlive.png"
   materials:
-    - label: "project website"
+    - label: "Project Website"
       url: "https://catchlive.kixlab.org/"
   award: ""
   link: "https://kixlab.github.io/website-files/2022/chi2022-CatchLive-paper.pdf"
@@ -152,7 +154,7 @@
   type: conference
   img: "./../assets/img/softvideo.png"
   materials:
-    - label: "project website"
+    - label: "Project Website"
       url: "https://softvideo.kixlab.org/"
   award: ""
   link: "https://kixlab.github.io/website-files/2022/iui2022-SoftVideo-paper.pdf"
@@ -163,9 +165,9 @@
   type: conference
   img: "./../assets/img/snapstream.png"
   materials:
-    - label: "project website"
+    - label: "Project Website"
       url: "https://snapstream.kixlab.org/"
-    - label: "video preview"
+    - label: "Video Preview"
       url: "https://youtu.be/x62vzVBD4N4"
   award: ""
   link: "https://kixlab.github.io/website-files/2020/chi2020-Snapstream-paper.pdf"
