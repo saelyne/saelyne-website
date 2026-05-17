@@ -269,4 +269,17 @@
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
+
+  <div class="author__news">
+    <div class="author__section-label">Recent News</div>
+    <ul class="sidebar-news-list">
+      {% for news in site.data.news %}
+      <li class="sidebar-news-item{% if forloop.index > 5 %} sidebar-news-hidden{% endif %}">{{news.item}}</li>
+      {% endfor %}
+    </ul>
+    {% if site.data.news.size > 5 %}
+    {% assign hidden_count = site.data.news.size | minus: 5 %}
+    <button class="news-toggle sidebar-news-toggle" onclick="var l=this.parentElement.querySelector('.sidebar-news-list'),e=l.classList.toggle('expanded');this.textContent=e?'Show less':'Show more'">Show more</button>
+    {% endif %}
+  </div>
 </div>

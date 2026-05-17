@@ -7,16 +7,84 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+// ============================================================
+// Design tokens
+// ============================================================
+$header-bg:     #1d2d44;   // deep navy — the identity color
+$accent:        #2a6099;   // medium blue for links / pills
+$text-primary:  #1a202c;
+$text-secondary:#4a5568;
+$text-muted:    #888;
+$border-light:  #e2e8f0;
+
+// ============================================================
+// Base
+// ============================================================
 body {
-  font-size: 0.8em;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82em;
+  color: $text-primary;
+  line-height: 1.75;
 }
 
-ul {
-  margin: 0.2em;
+ul { margin: 0.2em; }
+
+a {
+  color: $accent;
+  &:hover { text-decoration: underline; }
 }
 
-.archive h2 {
-  font-size: 1.2em;
+.link {
+  color: $accent;
+  font-weight: 500;
+}
+
+// ============================================================
+// Masthead — full-width dark header band (David Lin style)
+// ============================================================
+.masthead {
+  background: $header-bg;
+  border-bottom: none;
+  padding: 10px 0;
+
+  .masthead__inner-wrap { background: $header-bg; }
+
+  .site-title {
+    color: #fff !important;
+    font-size: 1.05em;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+      color: rgba(255,255,255,0.75) !important;
+    }
+  }
+
+  .greedy-nav { background: transparent; }
+
+  // hamburger icon on mobile
+  .greedy-nav__toggle { color: rgba(255,255,255,0.8); }
+}
+
+// ============================================================
+// Section headers — plain uppercase labels (David Lin style)
+// ============================================================
+.archive h2,
+h2.archive__subtitle {
+  font-size: 0.72em !important;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $text-muted;
+  margin-top: 2.2em;
+  margin-bottom: 0.9em;
+  padding-bottom: 0.45em;
+  border-bottom: 1px solid $border-light;
+
+  // no accent bar — clean like David Lin
+  &::after { display: none; }
 }
 
 .archive h3 {
@@ -24,103 +92,311 @@ ul {
   margin-top: 15px;
 }
 
+// ============================================================
+// Sidebar author panel
+// ============================================================
 .author__name a {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $text-primary;
 }
 
 .author__bio p {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
+  color: $text-secondary;
+}
+
+// sidebar section labels: CONTACT / LINKS style
+.author__urls-wrapper {
+  &::before {
+    content: 'LINKS';
+    display: block;
+    font-size: 0.65em;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: $text-muted;
+    margin: 12px 0 4px;
+    border-bottom: 1px solid $border-light;
+    padding-bottom: 4px;
+  }
 }
 
 .author__urls .cv-link {
-  font-size: 16px;
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 12px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  color: $text-secondary !important;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+
+  &:hover {
+    border-color: $accent;
+    color: $accent !important;
+    text-decoration: none;
+  }
 }
 
-.author__urls .label {
-  font-size: 16px;
-}
+.author__urls .label { font-size: 13px; }
 
 .author__avatar img {
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 3px solid $border-light;
 }
 
-.page__footer-copyright {
-  text-align: center;
+// ============================================================
+// Intro block
+// ============================================================
+.wrapper { line-height: 1.8; }
+
+// ============================================================
+// Research interest tags
+// ============================================================
+.research-interests {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
 }
 
-.wrapper {
-  // font-size: 16px;
+.research-interests__label {
+  font-weight: 600;
+  font-size: 0.92em;
+  margin-right: 2px;
 }
 
-.list-item li {
-  margin-bottom: 0.2em;
+.research-tag {
+  display: inline-block;
+  padding: 3px 11px;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  font-size: 0.8em;
+  color: $text-secondary;
+  white-space: nowrap;
 }
 
+// ============================================================
+// Sidebar news (left column)
+// ============================================================
+.author__news {
+  margin-top: 16px;
+  padding-top: 4px;
+}
+
+.author__section-label {
+  font-size: 0.65em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $text-muted;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid $border-light;
+}
+
+.sidebar-news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 6px;
+}
+
+.sidebar-news-item {
+  font-size: 0.82em;
+  line-height: 1.5;
+  padding: 5px 0;
+  border-bottom: 1px solid $border-light;
+  color: $text-secondary;
+
+  &:last-of-type { border-bottom: none; }
+  &.sidebar-news-hidden { display: none; }
+}
+
+.sidebar-news-list.expanded .sidebar-news-hidden {
+  display: list-item;
+}
+
+// ============================================================
+// News (kept for any legacy references)
+// ============================================================
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.2em 0 0.6em;
+}
+
+.news-item {
+  padding: 4px 0;
+  margin-bottom: 4px;
+  line-height: 1.55;
+  border-bottom: 1px solid $border-light;
+
+  &:last-of-type { border-bottom: none; }
+
+  &.news-hidden { display: none; }
+}
+
+.news-list.expanded .news-item.news-hidden {
+  display: list-item;
+}
+
+.news-toggle {
+  background: none;
+  border: 1px solid #bbb;
+  color: $text-secondary;
+  border-radius: 3px;
+  padding: 2px 12px;
+  font-size: 0.78em;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s, color 0.15s;
+  margin-top: 4px;
+
+  &:hover {
+    border-color: $accent;
+    color: $accent;
+  }
+}
+
+// ============================================================
+// Publications
+// ============================================================
 .paper-wrapper {
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $border-light;
+
+  &:last-child { border-bottom: none; }
 }
 
 .paper-wrapper img {
-  width: 220px;
-  //   height: 120px;
-  // margin-bottom: 20px;
+  width: 180px;
+  min-width: 180px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  align-self: flex-start;
+  border: 1px solid $border-light;
 }
 
 .paper-title {
-  font-weight: bold;
-}
-
-.paper-content a {
-  color: black;
+  font-weight: 600;
+  font-size: 1em;
+  color: $text-primary;
+  line-height: 1.4;
 }
 
 .paper-content {
-  margin-left: 20px;
+  margin-left: 18px;
+  a { color: $accent; }
 }
 
 .paper-author p {
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-
-.paper-meta {
-  margin-top: 5px;
-}
-
-.service-group {
-  margin: 10px 0;
-}
-
-.paper-note{
-  font-style: italic;
+  margin-top: 3px;
+  margin-bottom: 0;
+  color: $text-secondary;
   font-size: 0.9em;
 }
 
-// .paper-meta a::before {
-//   text-decoration: none;
-//   display: inline-block;
-//   content: "| \00a0";
-// }
+.venue {
+  font-style: italic;
+  font-size: 0.88em;
+  color: $text-secondary;
+}
 
-@media (max-width: 600px) {
-  body {
-    font-size: 1em; /* Adjust to your preferred font size for mobile */
+// Pill-style link buttons (David Lin style)
+.paper-meta {
+  margin-top: 8px;
+}
+
+.pill-link {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 0.78em;
+  font-weight: 500;
+  color: $text-secondary;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+
+  &:hover {
+    border-color: $accent;
+    color: $accent;
+    text-decoration: none;
   }
+}
+
+.paper-note {
+  font-style: italic;
+  font-size: 0.87em;
+  color: $text-muted;
+}
+
+// ============================================================
+// List sections (Experience, Awards, Education)
+// ============================================================
+.list-item {
+  padding-left: 0;
+
+  li {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid $border-light;
+
+    &:last-child { border-bottom: none; }
+  }
+}
+
+// ============================================================
+// Service groups
+// ============================================================
+.service-group { margin: 10px 0; }
+
+// ============================================================
+// Footer
+// ============================================================
+.page__footer-copyright {
+  text-align: center;
+  color: $text-muted;
+  font-size: 0.82em;
+}
+
+// ============================================================
+// Responsive
+// ============================================================
+@media (max-width: 600px) {
+  body { font-size: 1em; }
 
   .author__urls-wrapper {
     padding-left: 0;
     display: block;
     margin-left: -30px;
   }
+
+  .paper-wrapper { flex-direction: column; }
+
   .paper-wrapper img {
-    width: 120px;
-    height: 60px;
-    margin-bottom: 20px;
+    width: 100%;
+    min-width: unset;
+    max-height: 120px;
+    margin-bottom: 12px;
   }
+
+  .paper-content { margin-left: 0; }
+
   .author__avatar img {
     margin-top: 15px;
     width: 120px;
@@ -131,6 +407,5 @@ ul {
     padding-right: 0;
     padding-left: 30px;
     padding-top: 30px;
-    //   text-align: center;
   }
 }

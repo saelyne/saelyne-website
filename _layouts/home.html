@@ -15,20 +15,18 @@ layout: archive
     style="width: 80%; display: block; margin: 10px auto;" /> -->
 
 </div>
-<div style="margin-bottom: 15px;">
-  <span style="font-weight: 600;">Research Interests: </span>Human-AI Interaction; Human-Agent Collaboration;
-  Multimodal Understanding; Procedural Task Learning; Skill Learning
+<div class="research-interests">
+  <span class="research-interests__label">Research Interests</span>
+  <span class="research-tag">Human-AI Interaction</span>
+  <span class="research-tag">Human-Agent Collaboration</span>
+  <span class="research-tag">Multimodal Understanding</span>
+  <span class="research-tag">Procedural Task Learning</span>
+  <span class="research-tag">Skill Learning</span>
 </div>
 <!-- <div style="font-weight: 600; color:chocolate">
   I’m excited to join CMU as a Postdoctoral Fellow starting in March 2026, working with Jeff Bigham!
 </div> -->
 
-<h2 class="archive__subtitle">News</h2>
-<ul class="list-item wrapper">
-  {% for news in site.data.news %}
-  <li>{{news.item}}</li>
-  {% endfor %}
-</ul>
 
 <h2 class="archive__subtitle">Publications</h2>
 
@@ -68,10 +66,10 @@ layout: archive
       </div>
       <div class="paper-meta">
         {% if paper.link !="" %}
-        [<a href="{{paper.link}}" class="material" target="_blank">pdf</a>]
+        <a href="{{paper.link}}" class="pill-link" target="_blank">pdf</a>
         {% endif %}
         {% for material in paper.materials %}
-        [<a href="{{material.url}}" class="material" target="_blank">{{ material.label }}</a>]
+        <a href="{{material.url}}" class="pill-link" target="_blank">{{ material.label }}</a>
         {% endfor %}
       </div>
     </div>
@@ -101,10 +99,10 @@ layout: archive
       </div>
       <div class="paper-meta">
         {% if paper.link !="" %}
-        [<a href="{{paper.link}}" class="material" target="_blank">pdf</a>]
+        <a href="{{paper.link}}" class="pill-link" target="_blank">pdf</a>
         {% endif %}
         {% for material in paper.materials %}
-        [<a href="{{material.url}}" class="material" target="_blank">{{ material.label }}</a>]
+        <a href="{{material.url}}" class="pill-link" target="_blank">{{ material.label }}</a>
         {% endfor %}
       </div>
     </div>
