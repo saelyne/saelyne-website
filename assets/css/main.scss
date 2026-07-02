@@ -344,6 +344,15 @@ h2.archive__subtitle {
   color: $text-muted;
 }
 
+.award {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #fff6b8;
+  color: $text-primary;
+  font-size: 0.87em;
+}
+
 // ============================================================
 // List sections (Experience, Awards, Education)
 // ============================================================

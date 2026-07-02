@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title></title>
+<!-- begin _includes/seo.html --><title>Saelyne Yang</title>
 <meta name="description" content="Saelyne Yang’s personal website">
 
 
@@ -20,8 +20,8 @@
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="">
-<meta property="og:title" content="">
+<meta property="og:site_name" content="Saelyne Yang">
+<meta property="og:title" content="Saelyne Yang">
 <meta property="og:url" content="http://localhost:4000/">
 
 
@@ -69,7 +69,7 @@
 
 
 <link href="/feed.xml"
-  type="application/atom+xml" rel="alternate" title=" Feed">
+  type="application/atom+xml" rel="alternate" title="Saelyne Yang Feed">
 
 
 <!-- https://t.co/dKP3o1e -->
@@ -91,6 +91,10 @@
   <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- end custom head snippets -->
 
@@ -119,7 +123,7 @@
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">
-          
+          Saelyne Yang
           
         </a>
         <ul class="visible-links"></ul>
@@ -176,7 +180,7 @@
       
       
       
-      <li><a href="mailto:saelyne@kaist.ac.kr" rel="nofollow noopener noreferrer me"><i
+      <li><a href="mailto:saelyney@andrew.cmu.edu" rel="nofollow noopener noreferrer me"><i
             class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
       
       
@@ -186,13 +190,13 @@
       
       
       
-      <li><a href="https://github.com/saelyne/" rel="nofollow noopener noreferrer me"><i
-            class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-      
-      
-      
       <li><a href="https://twitter.com/saelyne_yang/" rel="nofollow noopener noreferrer me"><i
             class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+      
+      
+      
+      <li><a href="https://github.com/saelyne/" rel="nofollow noopener noreferrer me"><i
+            class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
       
       
       
@@ -261,6 +265,51 @@
 -->
     </ul>
   </div>
+
+  <div class="author__news">
+    <div class="author__section-label">Recent News</div>
+    <ul class="sidebar-news-list">
+      
+      <li class="sidebar-news-item">🛫 (Jun. 2026) Attended my first in-person PC meeting for UIST 2026 in Ann Arbor!</li>
+      
+      <li class="sidebar-news-item">🏆 (Jun. 2026) GUIDE won an Outstanding Paper Award at the 2nd Workshop on MMRAgI at CVPR 2026!</li>
+      
+      <li class="sidebar-news-item">🛫 (Jun. 2026) Attending CVPR 2026 to present GUIDE as a full paper and to give an oral presentation at a workshop!</li>
+      
+      <li class="sidebar-news-item">👩‍💼 (Mar. 2026) Started as a Postdoctoral Fellow at CMU!</li>
+      
+      <li class="sidebar-news-item">📝 (Feb. 2025) 1 paper accepted to CVPR, 1 paper accepted to CHI!</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">👩‍💼 (Feb. 2026) Serving as Program Committee for UIST 2026.</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">🎓 (Dec. 2025) Successfully defended my Ph.D. Thesis!</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">👩‍💼 (Jul. 2025) Serving as Program Committee for AAAI 2026.</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">📝 (Jan. 2025) My Adobe internship paper has been accepted to IUI 2025!</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">🏆 (Nov. 2024) Received a Special Recognition for Outstanding Reviews at CHI 2025.</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">🛫 (Oct. 2024) Attended UIST 2024 in Pittsburgh!🇺🇸</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">📝 (Aug. 2024) Doctoral Consortium and a paper have been accepted to UIST 2024!</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">🛫 (May. 2024) Attended CVPR 2024 and presented workshop papers!🇺🇸</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">👩‍💼 (May. 2024) Started a summer internship at Adobe Seattle!</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">🛫 (May. 2024) Attended CHI 2024 in Hawaii!🇺🇸</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">🛫 (Mar. 2024) Attended IUI 2024 in Greenville!🇺🇸</li>
+      
+      <li class="sidebar-news-item sidebar-news-hidden">🛫 (Feb. 2024) Attended AAAI 2024 in Vancouver!🇨🇦</li>
+      
+    </ul>
+    
+    
+    <button class="news-toggle sidebar-news-toggle" onclick="var l=this.parentElement.querySelector('.sidebar-news-list'),e=l.classList.toggle('expanded');this.textContent=e?'Show less':'Show more'">Show more</button>
+    
+  </div>
 </div>
   
   </div>
@@ -276,40 +325,24 @@
 <div class="wrapper" style="margin-bottom: 15px;">
   Hi! I'm a Postdoctoral Fellow at Carnegie Mellon University's <a href="https://hcii.cmu.edu/" class="link">Human-Computer Interaction Institute (HCII)</a>, working with <a href="https://www.cs.cmu.edu/~jbigham/" class="link">Jeff Bigham</a>. 
   I earned my Ph.D. from KAIST, advised by <a href="https://juhokim.com/" class="link">Juho Kim</a>, with support from the NAVER PhD Fellowship and the Kwanjeong Scholarship. I've had the opportunity to intern at Adobe Research, Autodesk Research, and LG AI Research. <br /><br />
-  My research focuses on empowering both humans and AI agents to master new skills. I build collaborative and proactive AI agents designed to assist with complex tasks by leveraging diverse learning materials (e.g., documents, videos) to foster more effective knowledge capture and sharing.
-  <!-- <br /><br />
-   -->
+  My research focuses on empowering both humans and AI agents to master new skills. I build user-aware, collaborative AI agents designed to assist with complex procedural tasks by leveraging diverse learning materials (e.g., documents, videos). For this purpose, I have recently been focusing on developing computer-use agents, making them controllable and flexible for users.
   <br />
   <!-- <img src="/assets/img/domain.png" alt="research domain" class="intro-image"
     style="width: 80%; display: block; margin: 10px auto;" /> -->
 
 </div>
-<div style="margin-bottom: 15px;">
-  <span style="font-weight: 600;">Research Interests: </span>Human-AI Interaction; Human-Agent Collaboration;
-  Multimodal Understanding; Procedural Task Learning; Skill Learning
+<div class="research-interests">
+  <span class="research-interests__label">Research Interests</span>
+  <span class="research-tag">Human-AI Interaction</span>
+  <span class="research-tag">Human-Agent Collaboration</span>
+  <span class="research-tag">Multimodal Understanding</span>
+  <span class="research-tag">Procedural Task Learning</span>
+  <span class="research-tag">Skill Learning</span>
 </div>
 <!-- <div style="font-weight: 600; color:chocolate">
   I’m excited to join CMU as a Postdoctoral Fellow starting in March 2026, working with Jeff Bigham!
 </div> -->
 
-<h2 class="archive__subtitle">News</h2>
-<ul class="list-item wrapper">
-  
-  <li>👩‍💼 (Mar. 2026) Started as a Postdoctoral Fellow at CMU!</li>
-  
-  <li>📝 (Feb. 2025) 1 paper accepted to CVPR, 1 paper accepted to CHI!</li>
-  
-  <li>👩‍💼 (Feb. 2026) Serving as Program Committee for UIST 2026.</li>
-  
-  <li>🎓 (Dec. 2025) Successfully defended my Ph.D. Thesis!</li>
-  
-  <li>👩‍💼 (Jul. 2025) Serving as Program Committee for AAAI 2026.</li>
-  
-  <li>📝 (Jan. 2025) My Adobe internship paper has been accepted to IUI 2025!</li>
-  
-  <li>🏆 (Nov. 2024) Received a Special Recognition for Outstanding Reviews at CHI 2025.</li>
-  
-</ul>
 
 <h2 class="archive__subtitle">Publications</h2>
 
@@ -317,11 +350,41 @@
 <div class="wrapper">
   
   <div class="paper-wrapper">
+    <img src="./../assets/img/blank.png" />
+    <div class="paper-content">
+      <span class="paper-title">Contexty: Capturing and Organizing In-situ Thoughts for Context-Aware AI Support</span>
+      
+      <div class="paper-author">
+        
+        <p>Yoonsu Kim, Chanbin Park, Kihoon Son, <strong>Saelyne Yang</strong>, Juho Kim</p>
+
+        
+      </div>
+      <!-- <div>
+        <i class="venue">UIST 2026</i>
+      </div> -->
+      <div>
+        
+        <i class="venue">UIST 2026</i>
+        
+      </div>
+      <div>
+        
+        
+      </div>
+      <div class="paper-meta">
+        
+        <a href="https://arxiv.org/abs/2604.11067" class="pill-link" target="_blank">pdf</a>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="paper-wrapper">
     <img src="./../assets/img/guide.png" />
     <div class="paper-content">
       <span class="paper-title">GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks</span>
-      
-      <span style="font-style: italic;"> (to appear)</span>
       
       <div class="paper-author">
         
@@ -338,13 +401,17 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
+        <span class="award">🏆 Outstanding Paper Award at the 2nd Workshop on MMRAgI at CVPR 2026</span>
+        
         
       </div>
       <div class="paper-meta">
         
+        <a href="https://arxiv.org/abs/2603.25864" class="pill-link" target="_blank">pdf</a>
+        
+        
+        <a href="https://guide-bench.github.io/" class="pill-link" target="_blank">Project Website</a>
         
       </div>
     </div>
@@ -370,14 +437,12 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://arxiv.org/abs/2602.08300" class="material" target="_blank">pdf</a>]
+        <a href="https://arxiv.org/abs/2602.08300" class="pill-link" target="_blank">pdf</a>
         
         
       </div>
@@ -404,14 +469,12 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://dl.acm.org/doi/full/10.1145/3708359.3712144" class="material" target="_blank">pdf</a>]
+        <a href="https://dl.acm.org/doi/full/10.1145/3708359.3712144" class="pill-link" target="_blank">pdf</a>
         
         
       </div>
@@ -438,17 +501,15 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2024/uist2024-dc-saelyne.pdf " class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2024/uist2024-dc-saelyne.pdf " class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://drive.google.com/file/d/1ZBsLtFRh_ATm0EEySQeZhjczTxlTSeL_/view?usp=sharing" class="material" target="_blank">poster</a>]
+        <a href="https://drive.google.com/file/d/1ZBsLtFRh_ATm0EEySQeZhjczTxlTSeL_/view?usp=sharing" class="pill-link" target="_blank">Poster</a>
         
       </div>
     </div>
@@ -474,14 +535,12 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://junyong.xyz/pdf/Pub_UIST2024.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://junyong.xyz/pdf/Pub_UIST2024.pdf" class="pill-link" target="_blank">pdf</a>
         
         
       </div>
@@ -509,17 +568,15 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2024/cvpr2024-finegrained-workshop.pdf " class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2024/cvpr2024-finegrained-workshop.pdf " class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://drive.google.com/file/d/1sI0aS3g_j1QXF0NLSsN8-Pa8Co8Yg1Mk/view?usp=sharing" class="material" target="_blank">poster</a>]
+        <a href="https://drive.google.com/file/d/1sI0aS3g_j1QXF0NLSsN8-Pa8Co8Yg1Mk/view?usp=sharing" class="pill-link" target="_blank">Poster</a>
         
       </div>
     </div>
@@ -545,14 +602,12 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://arxiv.org/abs/2403.05213" class="material" target="_blank">pdf</a>]
+        <a href="https://arxiv.org/abs/2403.05213" class="pill-link" target="_blank">pdf</a>
         
         
       </div>
@@ -579,19 +634,17 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
         <span class="paper-note">Also presented at the HAI-GEN Workshop at IUI 2024</span>
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://arxiv.org/abs/2403.17693" class="material" target="_blank">pdf</a>]
+        <a href="https://arxiv.org/abs/2403.17693" class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://expressedit.kixlab.org/" class="material" target="_blank">project website</a>]
+        <a href="https://expressedit.kixlab.org/" class="pill-link" target="_blank">Project Website</a>
         
       </div>
     </div>
@@ -617,21 +670,19 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
         <span class="paper-note">Also presented at the LPVL Workshop at CVPR 2024</span>
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://arxiv.org/abs/2401.17343" class="material" target="_blank">pdf</a>]
+        <a href="https://arxiv.org/abs/2401.17343" class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://drive.google.com/file/d/1bRLYm61tjrwTVorpL_sMNaAuRfGJZQBE/view" class="material" target="_blank">poster</a>]
+        <a href="https://drive.google.com/file/d/1bRLYm61tjrwTVorpL_sMNaAuRfGJZQBE/view" class="pill-link" target="_blank">Poster</a>
         
-        [<a href="https://github.com/lgresearch/YTCommentQA" class="material" target="_blank">dataset</a>]
+        <a href="https://github.com/lgresearch/YTCommentQA" class="pill-link" target="_blank">Dataset</a>
         
       </div>
     </div>
@@ -657,17 +708,15 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://sgvr.kaist.ac.kr/~guoyuan/Segment_retrieval/Towards%20Content-based%20Pixel%20Retrieval%20in%20Revisited%20Oxford%20and%20Paris.pdf" class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://github.com/anguoyuan/pixel_retrieval-segmented_instance_retrieval" class="material" target="_blank">dataset</a>]
+        <a href="https://github.com/anguoyuan/pixel_retrieval-segmented_instance_retrieval" class="pill-link" target="_blank">Dataset</a>
         
       </div>
     </div>
@@ -693,19 +742,17 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2023/chi2023-videomap-paper.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2023/chi2023-videomap-paper.pdf" class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://videomap.kixlab.org/" class="material" target="_blank">project website</a>]
+        <a href="https://videomap.kixlab.org/" class="pill-link" target="_blank">Project Website</a>
         
-        [<a href="https://youtu.be/3SN4OQuOQ-s" class="material" target="_blank">talk</a>]
+        <a href="https://youtu.be/3SN4OQuOQ-s" class="pill-link" target="_blank">Talk</a>
         
       </div>
     </div>
@@ -731,14 +778,12 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://minahuh.com/assets/pdf/AVscript-tagged.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://minahuh.com/assets/pdf/AVscript-tagged.pdf" class="pill-link" target="_blank">pdf</a>
         
         
       </div>
@@ -765,17 +810,15 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2022/chi2022-CatchLive-paper.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2022/chi2022-CatchLive-paper.pdf" class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://catchlive.kixlab.org/" class="material" target="_blank">project website</a>]
+        <a href="https://catchlive.kixlab.org/" class="pill-link" target="_blank">Project Website</a>
         
       </div>
     </div>
@@ -802,14 +845,12 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2022/chi2022-workshop-StarLab-paper.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2022/chi2022-workshop-StarLab-paper.pdf" class="pill-link" target="_blank">pdf</a>
         
         
       </div>
@@ -836,17 +877,15 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2022/iui2022-SoftVideo-paper.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2022/iui2022-SoftVideo-paper.pdf" class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://softvideo.kixlab.org/" class="material" target="_blank">project website</a>]
+        <a href="https://softvideo.kixlab.org/" class="pill-link" target="_blank">Project Website</a>
         
       </div>
     </div>
@@ -872,19 +911,17 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2020/chi2020-Snapstream-paper.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2020/chi2020-Snapstream-paper.pdf" class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://snapstream.kixlab.org/" class="material" target="_blank">project website</a>]
+        <a href="https://snapstream.kixlab.org/" class="pill-link" target="_blank">Project Website</a>
         
-        [<a href="https://youtu.be/x62vzVBD4N4" class="material" target="_blank">video preview</a>]
+        <a href="https://youtu.be/x62vzVBD4N4" class="pill-link" target="_blank">Video Preview</a>
         
       </div>
     </div>
@@ -910,14 +947,12 @@
         
       </div>
       <div>
-        <!-- 
-        <span class="award"></span>
-         -->
+        
         
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2020/hcik2020-SoftwareTutorial-paper.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2020/hcik2020-SoftwareTutorial-paper.pdf" class="pill-link" target="_blank">pdf</a>
         
         
       </div>
@@ -945,7 +980,7 @@
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2024/uist2024-dc-saelyne.pdf " class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2024/uist2024-dc-saelyne.pdf " class="pill-link" target="_blank">pdf</a>
         
         
       </div>
@@ -971,10 +1006,10 @@
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2024/cvpr2024-finegrained-workshop.pdf " class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2024/cvpr2024-finegrained-workshop.pdf " class="pill-link" target="_blank">pdf</a>
         
         
-        [<a href="https://drive.google.com/file/d/1sI0aS3g_j1QXF0NLSsN8-Pa8Co8Yg1Mk/view?usp=sharing" class="material" target="_blank">poster</a>]
+        <a href="https://drive.google.com/file/d/1sI0aS3g_j1QXF0NLSsN8-Pa8Co8Yg1Mk/view?usp=sharing" class="pill-link" target="_blank">poster</a>
         
       </div>
     </div>
@@ -999,7 +1034,7 @@
       </div>
       <div class="paper-meta">
         
-        [<a href="https://kixlab.github.io/website-files/2022/chi2022-workshop-StarLab-paper.pdf" class="material" target="_blank">pdf</a>]
+        <a href="https://kixlab.github.io/website-files/2022/chi2022-workshop-StarLab-paper.pdf" class="pill-link" target="_blank">pdf</a>
         
         
       </div>

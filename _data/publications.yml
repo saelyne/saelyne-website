@@ -1,3 +1,11 @@
+- title: "Contexty: Capturing and Organizing In-situ Thoughts for Context-Aware AI Support"
+  author: "Yoonsu Kim, Chanbin Park, Kihoon Son, **Saelyne Yang**, Juho Kim"
+  venue: "UIST 2026"
+  year: 2026
+  type: conference
+  img: "./../assets/img/blank.png"
+  award: ""
+  link: "https://arxiv.org/abs/2604.11067"
 - title: "GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks"
   author: "**Saelyne Yang**, Jaesang Yu, Yi-Hao Peng, Kevin Qinghong Lin, Jae Won Cho, Yale Song, Juho Kim"
   venue: "CVPR 2026"
@@ -7,7 +15,7 @@
   materials:
   - label: "Project Website"
     url: "https://guide-bench.github.io/"
-  award: ""
+  award: "Outstanding Paper Award at the 2nd Workshop on MMRAgI at CVPR 2026"
   link: "https://arxiv.org/abs/2603.25864"
 - title: "\"I Can't Keep Up\": Accessibility Barriers in Video-Based Learning for Individuals with Borderline Intellectual Functioning"
   author: "Hyehyun Chu, Seungju Kim, Chen Zhou, Yu-Kai Hung, **Saelyne Yang**, Hyun W. Ka, Juho Kim"

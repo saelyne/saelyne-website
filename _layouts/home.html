@@ -7,9 +7,7 @@ layout: archive
 <div class="wrapper" style="margin-bottom: 15px;">
   Hi! I'm a Postdoctoral Fellow at Carnegie Mellon University's <a href="https://hcii.cmu.edu/" class="link">Human-Computer Interaction Institute (HCII)</a>, working with <a href="https://www.cs.cmu.edu/~jbigham/" class="link">Jeff Bigham</a>. 
   I earned my Ph.D. from KAIST, advised by <a href="https://juhokim.com/" class="link">Juho Kim</a>, with support from the NAVER PhD Fellowship and the Kwanjeong Scholarship. I've had the opportunity to intern at Adobe Research, Autodesk Research, and LG AI Research. <br /><br />
-  My research focuses on empowering both humans and AI agents to master new skills. I build collaborative and proactive AI agents designed to assist with complex tasks by leveraging diverse learning materials (e.g., documents, videos) to foster more effective knowledge capture and sharing.
-  <!-- <br /><br />
-   -->
+  My research focuses on empowering both humans and AI agents to master new skills. I build user-aware, collaborative AI agents designed to assist with complex procedural tasks by leveraging diverse learning materials (e.g., documents, videos). For this purpose, I have recently been focusing on developing computer-use agents, making them controllable and flexible for users.
   <br />
   <!-- <img src="/assets/img/domain.png" alt="research domain" class="intro-image"
     style="width: 80%; display: block; margin: 10px auto;" /> -->
@@ -57,9 +55,9 @@ layout: archive
         {% endif %}
       </div>
       <div>
-        <!-- {% if paper.award %}
-        <span class="award">{{ paper.award }}</span>
-        {% endif %} -->
+        {% if paper.award != "" %}
+        <span class="award">🏆 {{ paper.award }}</span>
+        {% endif %}
         {% if paper.note %}
         <span class="paper-note">{{ paper.note }}</span>
         {% endif %}
