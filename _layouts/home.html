@@ -7,7 +7,7 @@ layout: archive
 <div class="wrapper" style="margin-bottom: 15px;">
   Hi! I'm a Postdoctoral Fellow at Carnegie Mellon University's <a href="https://hcii.cmu.edu/" class="link">Human-Computer Interaction Institute (HCII)</a>, working with <a href="https://www.cs.cmu.edu/~jbigham/" class="link">Jeff Bigham</a>. 
   I earned my Ph.D. from KAIST, advised by <a href="https://juhokim.com/" class="link">Juho Kim</a>, with support from the NAVER PhD Fellowship and the Kwanjeong Scholarship. I've had the opportunity to intern at Adobe Research, Autodesk Research, and LG AI Research. <br /><br />
-  My research focuses on empowering both humans and AI agents to master new skills. I build user-aware, collaborative AI agents designed to assist with complex procedural tasks by leveraging diverse learning materials (e.g., documents, videos). For this purpose, I have recently been focusing on developing computer-use agents, making them controllable and flexible for users.
+  My research focuses on helping people learn new skills and perform complex tasks. I have developed AI-based systems that use instructional videos and AI agents to support users in completing procedural tasks. My current research focuses on building user-aware and collaborative AI agents that can adapt to individual users and work alongside them.
   <br />
   <!-- <img src="/assets/img/domain.png" alt="research domain" class="intro-image"
     style="width: 80%; display: block; margin: 10px auto;" /> -->
@@ -17,6 +17,7 @@ layout: archive
   <span class="research-interests__label">Research Interests</span>
   <span class="research-tag">Human-AI Interaction</span>
   <span class="research-tag">Human-Agent Collaboration</span>
+  <span class="research-tag">GUI Agents</span>
   <span class="research-tag">Multimodal Understanding</span>
   <span class="research-tag">Procedural Task Learning</span>
   <span class="research-tag">Skill Learning</span>
@@ -28,8 +29,18 @@ layout: archive
 
 <h2 class="archive__subtitle">Publications</h2>
 
-<!-- <h3 class="archive__subtitle">Conference and Journal Papers</h3> -->
-<div class="wrapper">
+<div class="publication-tabs" role="tablist" aria-label="Publication categories">
+  <button class="publication-tab is-active" type="button" role="tab" aria-selected="true"
+    aria-controls="full-papers" id="full-papers-tab" data-publication-tab="full-papers">
+    Full Papers
+  </button>
+  <button class="publication-tab" type="button" role="tab" aria-selected="false"
+    aria-controls="posters-workshops" id="posters-workshops-tab" data-publication-tab="posters-workshops">
+    Posters &amp; Workshop Papers
+  </button>
+</div>
+
+<div class="wrapper publication-panel" id="full-papers" role="tabpanel" aria-labelledby="full-papers-tab">
   {% for paper in site.data.publications %}
   <div class="paper-wrapper">
     <img src="{{ paper.img }}" />
@@ -74,8 +85,9 @@ layout: archive
   </div>
   {% endfor %}
 </div>
-<!-- <h3 class="archive__subtitle">Posters, Demos, and Workshop Papers</h3>
-<div class="wrapper">
+
+<div class="wrapper publication-panel" id="posters-workshops" role="tabpanel"
+  aria-labelledby="posters-workshops-tab" hidden>
   {% for paper in site.data.publications-workshop %}
   <div class="paper-wrapper">
     <img src="{{ paper.img }}" />
@@ -90,9 +102,16 @@ layout: archive
         {% endfor %}
       </div>
       <div>
+        {% if paper.workshop != "" %}
+          {% if paper.workshop_link != "" %}
+          <a class="workshop-venue-link" href="{{paper.workshop_link}}" target="_blank">
+            <i class="venue">{{ paper.venue }} on {{paper.workshop}}</i>
+          </a>
+          {% else %}
+          <i class="venue">{{ paper.venue }} on {{paper.workshop}}</i>
+          {% endif %}
+        {% else %}
         <i class="venue">{{ paper.venue }}</i>
-        {% if paper.workshop !="" %}
-        <span> on <a href="{{paper.workshop_link}}">{{paper.workshop}}</a></span>
         {% endif %}
       </div>
       <div class="paper-meta">
@@ -106,7 +125,23 @@ layout: archive
     </div>
   </div>
   {% endfor %}
-</div> -->
+</div>
+
+<script>
+  (function () {
+    var tabs = document.querySelectorAll('[data-publication-tab]');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        tabs.forEach(function (item) {
+          var isActive = item === tab;
+          item.classList.toggle('is-active', isActive);
+          item.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          document.getElementById(item.getAttribute('data-publication-tab')).hidden = !isActive;
+        });
+      });
+    });
+  }());
+</script>
 
 <h2 class="archive__subtitle">Experiences</h2>
 <ul class="list-item wrapper">
@@ -135,7 +170,7 @@ layout: archive
   <li>{{award.title}} ({{award.date}})</li>
   {% else %}
   <li><a href="{{award.link}}">{{award.title}}</a> ({{award.date}})</li>
-  {% endif "%}
+  {% endif %}
   {% endfor %}
 </ul>
 

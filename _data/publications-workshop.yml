@@ -1,3 +1,22 @@
+- title: "Towards Benchmarking Screen Reader Use in Computer Use Agents"
+  author: "Valerie Sazonova, **Saelyne Yang**, Jeffrey P. Bigham, Yi-Hao Peng"
+  venue: "UIST 2026 Poster"
+  workshop: ""
+  year: 2026
+  img: "./../assets/img/blank.png"
+  materials:
+  award: ""
+  link: ""
+- title: "When AI 'Works,' When Does Help Begin?: Intergenerational Support Around Older Adults' LLM Usage"
+  author: "Hyehyun Chu, Yuri Lee, Yeon Su Park, **Saelyne Yang**, Juho Kim"
+  venue: "CSCW 2026 Workshop"
+  workshop: "Growing Up (and Old) with AI: Co-Constructing the Future for Family-Centered AI"
+  workshop_link: "https://arxiv.org/abs/2608.24297"
+  year: 2026
+  img: "./../assets/img/cscw-workshop.png"
+  materials:
+  award: ""
+  link: "https://arxiv.org/abs/2608.24297"
 - title: "Enhancing How People Learn Procedural Tasks Through How-to Videos"
   author: "**Saelyne Yang**"
   venue: "UIST 2024 Doctoral Symposium"

@@ -3,7 +3,7 @@
   venue: "UIST 2026"
   year: 2026
   type: conference
-  img: "./../assets/img/blank.png"
+  img: "./../assets/img/contexty.png"
   award: ""
   link: "https://arxiv.org/abs/2604.11067"
 - title: "GUIDE: A Benchmark for Understanding and Assisting Users in Open-Ended GUI Tasks"
@@ -35,16 +35,6 @@
   materials:
   award: ""
   link: "https://dl.acm.org/doi/full/10.1145/3708359.3712144"
-- title: "Enhancing How People Learn Procedural Tasks Through How-to Videos"
-  author: "**Saelyne Yang**"
-  venue: "UIST 2024 Doctoral Symposium"
-  year: 2024
-  img: "./../assets/img/uist-dc.png"
-  materials:
-    - label: "Poster"
-      url: "https://drive.google.com/file/d/1ZBsLtFRh_ATm0EEySQeZhjczTxlTSeL_/view?usp=sharing"
-  award: ""
-  link: "https://kixlab.github.io/website-files/2024/uist2024-dc-saelyne.pdf "
 - title: "Silent Impact: Tracking Tennis Shots from the Passive Arm"
   author: "Junyong Park, **Saelyne Yang**, Sungho Jo"
   venue: "UIST 2024"
@@ -54,18 +44,6 @@
   materials:
   award: ""
   link: "https://junyong.xyz/pdf/Pub_UIST2024.pdf"
-- title: "Fine-Grained Action Understanding with Tools in Instructional Videos"
-  author: "**Saelyne Yang**, Jaesang Yu, Jae Won Cho, Juho Kim"
-  venue: "CVPR 2024 Workshop"
-  workshop: "Learning from Procedural Videos and Language"
-  workshop_link: "https://sites.google.com/view/lpvl-cvpr2024"
-  year: 2024
-  img: "./../assets/img/fine-grained.png"
-  materials:
-    - label: "Poster"
-      url: "https://drive.google.com/file/d/1sI0aS3g_j1QXF0NLSsN8-Pa8Co8Yg1Mk/view?usp=sharing"
-  award: ""
-  link: "https://kixlab.github.io/website-files/2024/cvpr2024-finegrained-workshop.pdf "
 - title: "AQuA: Automated Question-Answering in Software Tutorial Videos with Visual Anchors"
   author: "**Saelyne Yang**, Jo Vermeulen, George Fitzmaurice, Justin Matejka"
   venue: "CHI 2024"
@@ -145,16 +123,6 @@
       url: "https://catchlive.kixlab.org/"
   award: ""
   link: "https://kixlab.github.io/website-files/2022/chi2022-CatchLive-paper.pdf"
-- title: "Improving Video Interfaces by Presenting Informational Units of Videos"
-  author: "**Saelyne Yang**, Sankyung Kwak, Tae Soo Kim, Juho Kim"
-  venue: "CHI 2022 Workshop"
-  workshop: "Computational Approaches for Understanding, Generating, and Adapting User Interfaces"
-  workshop_link: "https://sites.google.com/nd.edu/computational-uichi22"
-  year: 2022
-  img: "./../assets/img/video-unit.png"
-  materials:
-  award: ""
-  link: "https://kixlab.github.io/website-files/2022/chi2022-workshop-StarLab-paper.pdf"
 - title: "SoftVideo: Improving the Learning Experience of Software Tutorial Videos with Collective Interaction Data"
   author: "**Saelyne Yang**, Jisu Yim, Aitolkyn Baigutanova, Seoyoung Kim, Minsuk Chang, Juho Kim"
   venue: "IUI 2022"

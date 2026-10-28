@@ -268,6 +268,41 @@ h2.archive__subtitle {
 // ============================================================
 // Publications
 // ============================================================
+.publication-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 22px;
+}
+
+.publication-tab {
+  appearance: none;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 999px;
+  color: $text-secondary;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.84em;
+  font-weight: 600;
+  padding: 7px 16px;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $accent;
+    color: $accent;
+  }
+
+  &.is-active {
+    background: $accent;
+    border-color: $accent;
+    color: #fff;
+  }
+}
+
+.publication-panel[hidden] { display: none; }
+
 .paper-wrapper {
   display: flex;
   flex-direction: row;
@@ -311,6 +346,17 @@ h2.archive__subtitle {
   font-style: italic;
   font-size: 0.88em;
   color: $text-secondary;
+}
+
+.workshop-venue-link {
+  color: inherit !important;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: inherit !important;
+    text-decoration: underline;
+  }
 }
 
 // Pill-style link buttons (David Lin style)
